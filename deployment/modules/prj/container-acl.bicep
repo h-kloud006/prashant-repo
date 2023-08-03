@@ -9,7 +9,7 @@ resource createacl 'Microsoft.Resources/deploymentScripts@2020-10-01' = {
  
  properties: {
   azPowerShellVersion: '9.7' // or azCliVersion: '2.47.0'
-  primaryScriptUri: 'https://raw.githubusercontent.com/prashant101386/IMPORTANT/main/deployment/modules/prj/acl.ps1'
+  primaryScriptUri: 'https://raw.githubusercontent.com/h-kloud006/prashant-repo/main/deployment/modules/prj/acl.ps1'
   arguments: '-keys ${key}'
   environmentVariables: [
     {
