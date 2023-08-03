@@ -48,7 +48,7 @@ resource keyVault2 'Microsoft.KeyVault/vaults@2023-02-01' existing = {
 }
 
 module acls 'container-acl.bicep' = {
-  scope: resourceGroup('dmw2dihadbrg01-learning')
+  scope: resourceGroup(rg.name)
   name: 'createacl'
   params: {
     acl:acl
