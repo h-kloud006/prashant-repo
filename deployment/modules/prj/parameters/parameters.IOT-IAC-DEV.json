@@ -11,19 +11,6 @@
         "tags": {
             "value": {}
         },
-        "keyVault": {
-            "value": {
-                "name": "dmw2dihtcokv01-learning",
-                "location": "centralindia",
-                "sku": {
-                    "family": "A",
-                    "name": "standard"
-                },
-                "tenantId": "e02863cf-f37d-4df4-94d0-f29f1a4d6bcf",
-                "accesspolicies": [],
-                "isRequired": false
-            }
-        },
         "storageAccount": {
             "value": {
                 "name": "testhrsa"
