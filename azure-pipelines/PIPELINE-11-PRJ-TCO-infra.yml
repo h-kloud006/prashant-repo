@@ -16,13 +16,13 @@ stages:
 ##  BUILD INFRA  ##
 ####################
 
-# Lint the Bicep file
-- stage: buildinfra
-  displayName: 'Build Environment'
-  jobs: 
-  - template: templates/run-code-lint.template.yml
-    parameters:
-      module: 'prj'
+#' Lint the Bicep file
+#- stage: buildinfra
+#  displayName: 'Build Environment'
+ # jobs: 
+ # - template: templates/run-code-lint.template.yml
+  #  parameters:
+   #   module: 'prj'
 
 ####################
 ##  DEPLOY INFRA  ##

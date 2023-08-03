@@ -31,7 +31,7 @@
                     "b559c4a1-5bb3-49cb-84a5-3c8e5cbc5444",
                     "e50ed90e-27de-4ced-8bf5-9b4d36822ecf"
                 ],
-                "type":"test only"
+                "type":"test_only"
             }
         }
     }
