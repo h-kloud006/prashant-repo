@@ -2,7 +2,7 @@ param subscriptionId string = ''
 param resourceGroupName string
 param location string
 param tags object
-param keyVault object
+//param keyVault object
 param container object
 //param dataBricks object
 //param cluster object
@@ -23,7 +23,7 @@ module rg 'resource-group.bicep' = {
     tags: tags
   }
 }
-
+/*
 module kv 'key-vault.bicep' = {
   scope: resourceGroup(rg.name)
   name: keyVault.name
@@ -31,10 +31,10 @@ module kv 'key-vault.bicep' = {
     keyVault: keyVault
     tags: tags
   }
-}
+}*/
 
 module sac 'storage-account-container.bicep' = {
-  scope: resourceGroup('dmw2dihadbrg01-learning')
+  scope: resourceGroup(rg.name)
   name: container.name
   params: {
     container: container
@@ -43,8 +43,8 @@ module sac 'storage-account-container.bicep' = {
 }
 
 resource keyVault2 'Microsoft.KeyVault/vaults@2023-02-01' existing = {
-  scope: resourceGroup('dmw2dihadbrg01-learning')
-  name: 'dmw2dihadbkv01-learning'
+  scope: resourceGroup(rg.name)
+  name: 'testhr-kv'
 }
 
 module acls 'container-acl.bicep' = {

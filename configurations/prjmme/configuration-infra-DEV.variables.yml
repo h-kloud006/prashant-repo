@@ -1,7 +1,7 @@
 variables:
   # DEV Environment
-  RESOURCE_GROUP: dmw2dihmmerg01-learning
-  LOCATION: centralindia
-  SERVICECONNECTION_RG: learningpipelines
-  SUBSCRIPTIONID: "e609b895-8521-4e27-a166-510b517292f5"
+  RESOURCE_GROUP: test-rg
+  LOCATION: eastus
+  SERVICECONNECTION_RG: cicd-sp
+  SUBSCRIPTIONID: "a305ce37-5b0c-45c6-bc50-654b538b6a80"
   isRequired: false

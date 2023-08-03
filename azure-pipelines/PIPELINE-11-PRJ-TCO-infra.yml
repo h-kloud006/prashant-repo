@@ -38,7 +38,7 @@ stages:
   jobs:
   - template: templates/deploy-env-infra.template.yml
     parameters:
-      environment: TCO-IAC-DEV
+      environment: IOT-IAC-DEV
       serviceConnection: $(SERVICECONNECTION_RG)
       resourceGroup: $(RESOURCE_GROUP)
       location: $(LOCATION)

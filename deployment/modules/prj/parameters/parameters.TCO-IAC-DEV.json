@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "centralindia"
+            "value": "eastus"
         },
         "resourceGroupName": {
-            "value": "dmw2dihtcorg01-learning"
+            "value": "test-rg"
         },
         "tags": {
             "value": {}
@@ -26,7 +26,7 @@
         },
         "storageAccount": {
             "value": {
-                "name": "dmw2dihadbsa01learning"
+                "name": "testhrsa"
             }
         },
         "container": {
@@ -37,10 +37,13 @@
         },
         "acl": {
             "value": {
-                "location": "centralindia",
-                "name": "dmw2dihadbsa01learning",
+                "location": "eastus",
+                "name": "testacl",
                 "fs": "tco",
-                "user": "45cf2157-a31a-4327-b390-237b59924323"
+                "user": [
+                    "b559c4a1-5bb3-49cb-84a5-3c8e5cbc5444",
+                    "e50ed90e-27de-4ced-8bf5-9b4d36822ecf"
+                ]
             }
         }
     }
