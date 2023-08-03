@@ -31,7 +31,6 @@ stages:
 # Deploy DEV Environment
 - stage: deployinfra_dev
   displayName: 'Deploy DEV Environment'
-  dependsOn: buildinfra
   condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'))
   variables:
   - template: ../configurations/prjtco/configuration-infra-DEV.variables.yml
